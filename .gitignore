@@ -1,0 +1,10 @@
+# Keep the published repo scoped to the autonomous agent only
+tool_use_agent/
+
+# Environment / secrets
+.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
