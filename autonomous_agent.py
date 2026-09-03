@@ -120,7 +120,7 @@ def agent_interface(query):
     return run_agent(query)
 
 # Create the Gradio interface
-with gr.Blocks(theme=gr.themes.Soft()) as demo:
+with gr.Blocks() as demo:
     gr.Markdown("## 🤖 Local Autonomous Research Agent")
     gr.Markdown("Powered by Ollama (llama3.1:8b) and the ReAct framework.")
     
@@ -145,4 +145,4 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
 
 if __name__ == "__main__":
     # Launch the local web server
-    demo.launch(server_name="127.0.0.1", server_port=7860)
+    demo.launch(server_name="127.0.0.1", server_port=7860, theme=gr.themes.Soft())
